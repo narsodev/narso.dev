@@ -58,7 +58,7 @@ const setSlide = ({ prevSlide = $('.slide-active'), nextSlide, direction = 'next
   }, animationDuration)
 }
 
-const slide = $(`#${location.pathname.substring(1) === '' ? 'slide-1' : location.pathname.substring(1)}`)
+const slide = $(`#${location.pathname.substring(1) === '' ? 'inicio' : location.pathname.substring(1)}`)
 setSlide({ nextSlide: slide})
 
 navigationLinks.forEach(link => {
